@@ -36,13 +36,13 @@ export default () => {
         <Stack>
           <Link to="/" className={classes.link}>
             <Group>
-              <BsHouse size={30} />
+              <BsHouse size={24} />
               <Text className={classes.linkLabel}>Home</Text>
             </Group>
           </Link>
           <Link to="/posts" className={classes.link}>
             <Group>
-              <BsFillFilePostFill size={30} />
+              <BsFillFilePostFill size={24} />
               <Text className={classes.linkLabel}>Posts</Text>
             </Group>
           </Link>
