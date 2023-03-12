@@ -1,6 +1,6 @@
-import { MantineProvider } from "@mantine/core";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import MantineProviders from "./MantineProviders";
 import PostProvider from "./PostProvider";
 
 interface ProvidersProps {
@@ -10,9 +10,9 @@ interface ProvidersProps {
 export default ({ children }: ProvidersProps) => {
   return (
     <PostProvider>
-      <MantineProvider>
+      <MantineProviders>
         <BrowserRouter>{children}</BrowserRouter>
-      </MantineProvider>
+      </MantineProviders>
     </PostProvider>
   );
 };

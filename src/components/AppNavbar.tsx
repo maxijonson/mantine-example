@@ -6,7 +6,7 @@ import {
   Stack,
   Text,
 } from "@mantine/core";
-import { BsFillFilePostFill, BsHouse } from "react-icons/bs";
+import { BsFillFilePostFill, BsHouse, BsTiktok } from "react-icons/bs";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -44,6 +44,12 @@ export default () => {
             <Group>
               <BsFillFilePostFill size={24} />
               <Text className={classes.linkLabel}>Posts</Text>
+            </Group>
+          </Link>
+          <Link to="/jwt" className={classes.link}>
+            <Group>
+              <BsTiktok size={24} />
+              <Text className={classes.linkLabel}>JWT</Text>
             </Group>
           </Link>
         </Stack>
