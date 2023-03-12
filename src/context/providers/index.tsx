@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import AuthProvider from "./AuthProvider";
 import MantineProviders from "./MantineProviders";
 import PostProvider from "./PostProvider";
 
@@ -9,10 +10,12 @@ interface ProvidersProps {
 
 export default ({ children }: ProvidersProps) => {
   return (
-    <PostProvider>
-      <MantineProviders>
-        <BrowserRouter>{children}</BrowserRouter>
-      </MantineProviders>
-    </PostProvider>
+    <MantineProviders>
+      <AuthProvider>
+        <PostProvider>
+          <BrowserRouter>{children}</BrowserRouter>
+        </PostProvider>
+      </AuthProvider>
+    </MantineProviders>
   );
 };
