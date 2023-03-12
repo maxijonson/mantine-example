@@ -4,16 +4,16 @@ import { Notifications } from "@mantine/notifications";
 import React from "react";
 
 interface MantineProvidersProps {
-  children?: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export default ({ children }: MantineProvidersProps) => {
-  return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
-      <ModalsProvider>
-        <Notifications />
-        {children}
-      </ModalsProvider>
-    </MantineProvider>
-  );
+    return (
+        <MantineProvider withGlobalStyles withNormalizeCSS>
+            <ModalsProvider>
+                <Notifications />
+                {children}
+            </ModalsProvider>
+        </MantineProvider>
+    );
 };

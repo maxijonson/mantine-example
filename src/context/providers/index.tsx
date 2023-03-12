@@ -5,17 +5,17 @@ import MantineProviders from "./MantineProviders";
 import PostProvider from "./PostProvider";
 
 interface ProvidersProps {
-  children?: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export default ({ children }: ProvidersProps) => {
-  return (
-    <MantineProviders>
-      <AuthProvider>
-        <PostProvider>
-          <BrowserRouter>{children}</BrowserRouter>
-        </PostProvider>
-      </AuthProvider>
-    </MantineProviders>
-  );
+    return (
+        <MantineProviders>
+            <AuthProvider>
+                <PostProvider>
+                    <BrowserRouter>{children}</BrowserRouter>
+                </PostProvider>
+            </AuthProvider>
+        </MantineProviders>
+    );
 };

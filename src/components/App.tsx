@@ -4,9 +4,9 @@ import AppNavbar from "./AppNavbar";
 import AppHeader from "./AppHeader";
 
 export default () => {
-  return (
-    <AppShell padding="md" navbar={<AppNavbar />} header={<AppHeader />}>
-      <AppRouter />
-    </AppShell>
-  );
+    return (
+        <AppShell padding="md" navbar={<AppNavbar />} header={<AppHeader />}>
+            <AppRouter />
+        </AppShell>
+    );
 };
