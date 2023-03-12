@@ -14,7 +14,7 @@
     "env": {
         "node": true
     },
-    "ignorePatterns": [".eslintrc.cjs"],
+    "ignorePatterns": [".eslintrc", "postcss.config.cjs"],
     "rules": {
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-empty-function": "off",
